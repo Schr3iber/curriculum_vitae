@@ -1,0 +1,126 @@
+# ------------------------------------------------------------------
+# Lebenslauf-Daten. Nur diese Datei muss gepflegt werden.
+# Layout: template.typ  ·  Bauen: typst compile cv.typ
+#
+# Datumsformat: "JJJJ-MM" (z. B. "2024-09"). "end: heute" (oder weglassen) zeigt
+# "AKTUELL"; liegt "end" in der Zukunft, erscheint "vsl." davor.
+# Einträge werden automatisch absteigend nach Startdatum sortiert.
+# Leere Felder einfach weglassen.
+# ------------------------------------------------------------------
+
+lang: de            # de | en (steuert Überschriften & Silbentrennung)
+
+person:
+  first_name: Henning
+  last_name: Schreiber
+  headline: Masterstudent Informatik
+  photo: portrait.jpeg     # z. B. foto.jpg – leer lassen für "ohne Foto"
+  birthdate: 04.07.2000
+  nationality: deutsch
+  address:
+    - Hubertusstraße 12/14
+    - 52064 Aachen, Deutschland
+  phone: +49 152 56756150
+  email: henning.schreiber@alumni.fh-aachen.de
+  links:
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/henning-schreiber/
+    # - label: GitHub
+    #   url: https://github.com/...
+
+
+experience:
+  - title: Studentische Hilfskraft – Netzwerktechnik
+    org: IT Center RWTH Aachen – Abteilung Netze
+    location: Aachen
+    start: "2026-11"
+    end: heute
+    bullets: []
+  - title: Studentische Hilfskraft – Embedded Systems
+    org: FH Aachen – Lehrgebiet Verteilte Systeme
+    location: Aachen
+    start: "2024-09"
+    end: "2026-09"
+    bullets:
+      - >-
+        Betreuung der Module Distributed Embedded OS, Embedded OS
+        Development, Architektur von Rechnersystemen, Betriebssystemkonzepte
+        und verteilte Systeme, Distributed Control Systems sowie PCB Design
+      - Weiterentwicklung der Module und Softwareentwicklung für die Lehre
+  - title: Studentische Hilfskraft – Java-Entwicklung
+    org: SOPTIM AG
+    location: Aachen
+    start: "2024-06"
+    end: "2024-08"
+    bullets: []
+  - title: Fachinformatiker für Systemintegration
+    org: Landkreis Emsland – Schul-IT Emsland
+    location: Papenburg
+    start: "2021-06"
+    end: "2021-08"
+    bullets:
+      - Administration des Berufsschul-Campus Papenburg
+      - Server- und Netzwerkadministration
+      - First- und Second-Level-Support
+      - Benutzerverwaltung
+
+education:
+  - title: Master of Science, Informatik
+    org: Fachhochschule Aachen
+    location: Aachen
+    start: "2026-04"
+    end: "2027-08"
+  - title: Auslandssemester, Informatik
+    org: Zürcher Hochschule für Angewandte Wissenschaften (ZHAW)
+    location: Winterthur, Schweiz
+    start: "2025-02"
+    end: "2025-07"
+  - title: Bachelor of Science, Informatik
+    org: Fachhochschule Aachen
+    location: Aachen
+    start: "2022-09"
+    end: "2026-04"
+    bullets:
+      - Schwerpunkt Technische Informatik
+      - Abschlussnote 1,7
+      - >-
+        Bachelorarbeit: Konzeption und Realisierung von Embedded
+        Hard- und Software für das Modul Digitale Schaltungstechnik
+  - title: Fachoberschule Technik
+    org: Berufsbildende Schulen Papenburg
+    location: Papenburg
+    start: "2021-09"
+    end: "2022-06"
+  - title: Ausbildung Fachinformatiker für Systemintegration
+    org: Landkreis Emsland
+    location: Meppen
+    start: "2018-08"
+    end: "2021-06"
+
+skills:
+  - category: Programmierung
+    items: [Java, C (Embedded), C++]
+  - category: Versionsverwaltung
+    items: [Git]
+  - category: Betriebssysteme
+    items: [Windows, macOS, Linux (Debian)]
+  - category: Virtualisierung
+    items: [VMware ESXi, Proxmox]
+  - category: Container
+    items: [Docker]
+  - category: Netzwerktechnik
+    items: [UniFi, Cisco]
+  - category: Platinendesign
+    items: [KiCad]
+
+languages:
+  - name: Deutsch
+    level: Muttersprache
+  - name: Englisch
+    level: C1 · verhandlungssicher
+
+licences:
+  - name: Führerschein
+    value: AM, B, L
+  - name: Amateurfunk
+    value: Klasse N
